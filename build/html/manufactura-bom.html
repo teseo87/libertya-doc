@@ -33,7 +33,7 @@
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
         <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
         <link rel="next" title="Manufactura - Planeamiento" href="manufactura-plan.html"/>
-        <link rel="prev" title="Manufactura - Lista de Materiales" href="manufactura-flujos.html"/> 
+        <link rel="prev" title="Manufactura - Flujos de Trabajo" href="manufactura-flujos.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,8 +92,15 @@
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Lista de Materiales</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Lista de Materiales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Lista de Materiales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lista-de-materiales">Lista de materiales</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#perfiles-habilitados">Perfiles habilitados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lista-de-materiales-y-formulas">Lista de materiales y fórmulas</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Manufactura - Planeamiento</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
@@ -150,6 +157,43 @@
             
   <div class="section" id="manufactura-lista-de-materiales">
 <h1>Manufactura - Lista de Materiales<a class="headerlink" href="#manufactura-lista-de-materiales" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="lista-de-materiales">
+<h2>Lista de materiales<a class="headerlink" href="#lista-de-materiales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Permite definir la composición de los productos fabricados, tanto intermedios como  terminados. Se pueden tener distintos niveles intermedios de producción, los  niveles intermedios definen la fabricación de productos que serán entrada de otros procesos productivos de niveles superiores.</p>
+<div class="section" id="perfiles-habilitados">
+<h3>Perfiles habilitados<a class="headerlink" href="#perfiles-habilitados" title="Enlazar permanentemente con este título">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Manufactura</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="lista-de-materiales-y-formulas">
+<h3>Lista de materiales y fórmulas<a class="headerlink" href="#lista-de-materiales-y-formulas" title="Enlazar permanentemente con este título">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Acceder a la ventana que se encuentra en el menú Gestión de Manufactura → Gestión de Ingeniería → Lista de Materiales y Fórmulas → <strong>Lista de Materiales y Fórmulas</strong>.</p>
+</li>
+<li><p class="first">Campos a ingresar en la cabecera:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Compañía: Cliente para esta instalación compañía o entidad legal</li>
+<li>Organización: Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.</li>
+<li>Producto: Producto que va a tener una fórmula asociada.</li>
+<li>UM: Unidad de Medida se refiere a unidades de medida no monetarias y además define si se permite la conversión entre unidades de medida y cómo se van a calcular.</li>
+<li>Nombre: Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud.</li>
+<li>Descripción: Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.</li>
+<li>Ayuda: El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este item.</li>
+<li>Activo: El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes</li>
+<li>Aviso de Cambio Cuenta de materiales (ingeniería) cambio de aviso (versión).</li>
+<li>Nro del Documento: Número de secuencia del documento para cada documento creado. El número del documento es usualmente generado en automático por el sistema y determinado por el tipo del documento. Si el documento no se salva; el número preliminar se despliega entre &#8220;&lt;&gt;&#8221;.</li>
+<li>Tipo LDM: Tipo de Lista de Materiales.</li>
+<li>LDM Usada: Uso de lista de materiales. El predeterminado de la LDM es usado, Si hay alternativos no están definidos.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
 </div>
 
 
@@ -162,7 +206,7 @@
         <a href="manufactura-plan.html" class="btn btn-neutral float-right" title="Manufactura - Planeamiento" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manufactura-flujos.html" class="btn btn-neutral" title="Manufactura - Lista de Materiales" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manufactura-flujos.html" class="btn btn-neutral" title="Manufactura - Flujos de Trabajo" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
